@@ -1,0 +1,110 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+    
+  }
+
+  
+  form { 
+    margin: 0 auto; 
+ }
+
+  
+  /* Style the header */
+  .header {
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 20px;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 5px;
+    margin-left:10%;
+    margin-right: 10%;;
+    border: 2px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    float: left;
+    font-size: 15px;
+  }
+
+  
+  #new-task-submit
+  {
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    background: #ff0000;
+    position: relative;
+    color: rgb(255, 255, 255);
+    float: left;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    background: #4e9a40;
+    position: relative;
+    color: #555;
+    float: left;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  }
+  table th,
+table td {
+  border: none !important
+}
+ 
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+  }
+
+  tr:not(#heading):hover {
+    background-color: #cbcecf ;
+}
+
+h2
+{
+    text-align: center;
+}

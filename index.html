@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="scripts.js"></script>
+        
+    </head>
+    <body>
+        <div id="header" class="header">
+            <h2>TODO Manager</h2>
+            <form id="new-task-form">
+                <div>
+                    <label for="task-details"></label>
+                    <input type="text" id="new-task-input" placeholder="Task Details">
+                </div>
+    
+                <div>
+                    <label for="task-asignee"></label>
+                    <input type="text" id="new-task-asignee" placeholder="Assignee" >
+                </div>
+    
+                <div>
+                    <label for="task-due-date"></label>
+                    <input type="date" id="new-task-due-date"  placeholder="Due Date">
+                </div>
+    
+                <div>
+                    <label for="new-task-submit"></label>
+                    <input type="submit" value="Add Task" id="new-task-submit">
+                </div>
+            </form>
+        </div>
+
+        <div id = "table1">
+            <h2 id="tabhead">In Progress</h2>
+        <table id="InProgressTable" >
+            <tr id="heading">
+              <th>Task Details</th>
+              <th>Assignee</th>
+              <th>Due Date</th>
+              <th>Action</th>
+            </tr>
+            
+
+            </table>
+            </div>
+
+            <div id = "table2">
+                <h2 id="tabhead">Completed</h2>
+            <table id="completedTable">
+                <tr id="heading">
+                  <th>Task Details</th>
+                  <th>Assignee</th>
+                  <th>Due Date</th>
+                </tr>
+                
+    
+                </table>
+                </div>
+
+
+
+       
+        
+
+    </body>
+    
+
+
+
+  </html>

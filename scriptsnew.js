@@ -26,7 +26,7 @@ window.addEventListener('load', function () {
     ;
     ;
     var listAssignee = document.getElementById("assigneeName");
-    var assigneeLists = ["Jayesh", "Shibo", "Rahul", "Prabhjot", "Anubhv", "Hari", "Sarthak", "Anubhav", "Chetan", "Rishab", "Rakesh"];
+    var assigneeLists = ["Chetan", "Rakesh", "Anubhav", "Rishab", "Hari", "Sarthak", "Anubhav", "Jayesh", "Shibo", "Rahul", "Prabhjot"];
     var assigneeDropdown = function (assigneeList) {
         for (var _i = 0, assigneeList_1 = assigneeList; _i < assigneeList_1.length; _i++) {
             var list = assigneeList_1[_i];
@@ -117,6 +117,7 @@ window.addEventListener('load', function () {
         var taskDetails_entry = document.createTextNode(tasksData[map].taskDetails);
         var assigneeName_entry = document.createTextNode(tasksData[map].assigneeList);
         var dueDate_entry = document.createTextNode(tasksData[map].dueDate);
+        console.log(assigneeName_entry);
         var table = document.getElementById("InProgressTable");
         var row = table === null || table === void 0 ? void 0 : table.insertRow(1);
         var cell1 = row === null || row === void 0 ? void 0 : row.insertCell(0);

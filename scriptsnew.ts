@@ -43,7 +43,7 @@ window.addEventListener('load', ()=> {
       };
 
       let listAssignee = document.getElementById("assigneeName");
-      let assigneeLists : string[] = ["Jayesh","Shibo", "Rahul", "Prabhjot", "Anubhv", "Hari", "Sarthak", "Anubhav", "Chetan", "Rishab","Rakesh"];
+      let assigneeLists : string[] = ["","Chetan" ,"Rakesh",  "Anubhav", "Rishab", "Hari", "Sarthak", "Anubhav","Jayesh", "Shibo", "Rahul", "Prabhjot"];
       let assigneeDropdown = (assigneeList: string[]) => {
         for(let list of assigneeList){
           const option_i = document.createElement("option");
@@ -172,6 +172,8 @@ let validationCheck = (taskName:string,assigneeName:string,dueDate:string) =>
        let taskDetails_entry = document.createTextNode(tasksData[map].taskDetails);
        let assigneeName_entry= document.createTextNode(tasksData[map].assigneeList);
        let dueDate_entry=  document.createTextNode(tasksData[map].dueDate);
+
+       console.log(assigneeName_entry);
        
        
         let table = document.getElementById("InProgressTable") as HTMLTableElement;

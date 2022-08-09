@@ -2,31 +2,36 @@
     <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <script src="scripts.js"></script>
+        <script src="scriptsnew.js"></script>
         
     </head>
     <body>
         <div id="header" class="header">
             <h2>TODO Manager</h2>
-            <form id="new-task-form">
+            <form id="taskForm">
                 <div>
-                    <label for="task-details"></label>
-                    <input type="text" id="new-task-input" placeholder="Task Details">
+                    <label for="taskDetails"></label>
+                    <input type="text" id="taskDetails" placeholder="Task Details">
+                    <p id="detailsEmptyAlert">Please enter the task details</p>
+    
+                <div>
+                    <label for="assigneeNam_e"></label>
+                    <select id="assigneeName">
+                        <option value="" selected disabled hidden>Select Assignee</option>
+                        </select>
+                    <p id="assigneeNameEmptyAlert">Please enter the assignee name</p>
                 </div>
     
                 <div>
-                    <label for="task-asignee"></label>
-                    <input type="text" id="new-task-asignee" placeholder="Assignee" >
+                    <label for="dueDate"></label>
+                    <input type="date" id="dueDate"  placeholder="Due Date">
+                    <p id="dueDateEmptyAlert">Please enter the due date</p>
+                    <p id="dueDateFutureAlert">Please enter a correct due date</p>
                 </div>
     
                 <div>
-                    <label for="task-due-date"></label>
-                    <input type="date" id="new-task-due-date"  placeholder="Due Date">
-                </div>
-    
-                <div>
-                    <label for="new-task-submit"></label>
-                    <input type="submit" value="Add Task" id="new-task-submit">
+                    <label for="addBtn"></label>
+                    <input type="submit" value="Add Task" id="addBtn">
                 </div>
             </form>
         </div>
@@ -52,6 +57,7 @@
                   <th>Task Details</th>
                   <th>Assignee</th>
                   <th>Due Date</th>
+                  <th>Status</th>
                 </tr>
                 
     
